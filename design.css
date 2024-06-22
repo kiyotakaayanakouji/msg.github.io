@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.puzzle-container {
+    margin-top: 20px;
+}
+
+.reveal-container {
+    display: none;
+    margin-top: 20px;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #ff7f50; /* Orange */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #ff6347; /* Light Coral */
+    transform: scale(1.05);
+}
+
+.retry-message {
+    display: none;
+    color: #ff6347;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
