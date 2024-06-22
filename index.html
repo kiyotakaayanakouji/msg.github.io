@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Message App</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💌 Unlock the Secret Message 💌</h1>
+        <div id="puzzleContainer" class="puzzle-container">
+            <p id="riddle">You see me in the day, I vanish by nightfall. I bring clarity to the obscure. What am I?</p>
+            <input type="text" id="answerInput" placeholder="Your answer...">
+            <button id="submitAnswer">Submit</button>
+            <p id="retryMessage" class="retry-message">Incorrect answer. Please try again!</p>
+        </div>
+        <div id="revealContainer" class="reveal-container">
+            <h2>🎉 Congratulations! 🎉</h2>
+            <p id="secretMessage">Roshni, your smile is absolutely charming! 😊</p>
+        </div>
+    </div>
+    <script src="function.js"></script>
+</body>
+</html>
